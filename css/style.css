@@ -87,19 +87,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.nav-title-kr {
-    font-size: 0.75rem;
-    font-weight: 500;
-    opacity: 0.9;
-    margin-top: -3px;
-    margin-bottom: 2px;
-}
-
 .nav-subtitle {
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     font-weight: 400;
-    opacity: 0.7;
-    margin-top: -1px;
+    opacity: 0.8;
+    margin-top: -2px;
 }
 
 .nav-menu {
@@ -1386,7 +1378,6 @@ body {
         display: flex;
     }
     
-    .nav-title-kr,
     .nav-subtitle {
         display: none;
     }
