@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Engineer Academy - 차세대 항공정비 인재양성 프로그램</title>
+    <meta name="description" content="실제 항공기 정비기술과 드론을 융합한 혁신적인 항공정비 인재 양성 프로그램">
+    <meta name="keywords" content="항공정비, 드론, 교육, 한국공항공사, 사회공헌, 인재양성">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-plane"></i>
+                <span>Sky Engineer Academy</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">홈</a>
+                <a href="#about" class="nav-link">소개</a>
+                <a href="#program" class="nav-link">프로그램</a>
+                <a href="#gallery" class="nav-link">갤러리</a>
+                <a href="#partners" class="nav-link">파트너</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#apply" class="nav-link">신청</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text fade-in-up">
+                <h1 class="hero-title">
+                    <span class="title-main">Sky Engineer Academy</span>
+                    <span class="title-sub">차세대 항공정비 인재양성 프로그램</span>
+                </h1>
+                <p class="hero-description">
+                    실제 항공기 정비기술과 드론을 융합한 세계 최초의 혁신적 교육 프로그램
+                </p>
+                <div class="hero-buttons">
+                    <a href="#program" class="btn btn-primary">프로그램 보기</a>
+                    <a href="#apply" class="btn btn-secondary">지원하기</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item" data-count="72">
+                    <span class="stat-number">0</span>
+                    <span class="stat-label">3년간 양성 인력</span>
+                </div>
+                <div class="stat-item" data-count="95">
+                    <span class="stat-number">0</span>
+                    <span class="stat-label">자격증 취득률(%)</span>
+                </div>
+                <div class="stat-item" data-count="100">
+                    <span class="stat-number">0</span>
+                    <span class="stat-label">취업률(%)</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">프로그램 소개</h2>
+                <p class="section-subtitle">한국공항공사만의 독보적 강점을 활용한 혁신적 교육</p>
+            </div>
+            
+            <!-- Personal Info Card -->
+            <div class="personal-info-card fade-in-up">
+                <h3><i class="fas fa-user-circle"></i> 제안자 정보</h3>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-label">성명</span>
+                        <span class="info-value">박용환</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">생년월일</span>
+                        <span class="info-value">1970년 11월 6일</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">연락처</span>
+                        <span class="info-value">010-7939-3123</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">이메일</span>
+                        <span class="info-value">sanoramyun8@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">주소</span>
+                        <span class="info-value">경기도 용인시 수지구 성복2로 126</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">직업</span>
+                        <span class="info-value">아이디어 공모전 전문 콘텐츠 크리에이터</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Problems & Solutions -->
+            <div class="problems-solutions">
+                <div class="problem-card fade-in-left">
+                    <h3><i class="fas fa-exclamation-triangle"></i> 현재 문제점</h3>
+                    <ul>
+                        <li>항공정비사 연간 300명 부족</li>
+                        <li>평균 연령 45세로 고령화 심각</li>
+                        <li>드론정비 전문가 전국 50명 미만</li>
+                        <li>이론 위주 교육, 실무 경험 부족</li>
+                    </ul>
+                </div>
+                <div class="solution-card fade-in-right">
+                    <h3><i class="fas fa-lightbulb"></i> 우리의 해결책</h3>
+                    <ul>
+                        <li>실제 항공기를 활용한 실무 교육</li>
+                        <li>현직 정비사 120명의 멘토링</li>
+                        <li>세계 최초 항공기+드론 융합 교육</li>
+                        <li>취업 100% 보장 시스템</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Section -->
+    <section id="program" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">3단계 혁신 커리큘럼</h2>
+                <p class="section-subtitle">체계적이고 실무 중심의 단계별 교육과정</p>
+            </div>
+
+            <div class="program-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="step1">STEP 1</button>
+                    <button class="tab-btn" data-tab="step2">STEP 2</button>
+                    <button class="tab-btn" data-tab="step3">STEP 3</button>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-panel active" id="step1">
+                        <div class="step-card">
+                            <div class="step-header">
+                                <h3>기초 융합과정 (4주)</h3>
+                                <span class="step-duration">4 Weeks</span>
+                            </div>
+                            <div class="step-content">
+                                <ul>
+                                    <li><i class="fas fa-wrench"></i> 실제 B737 동체 해체·조립 실습 (주 3회)</li>
+                                    <li><i class="fas fa-cogs"></i> 드론 엔진과 항공기 엔진 구조 비교 분석</li>
+                                    <li><i class="fas fa-user-tie"></i> 현직 정비사와 1:1 도제식 멘토링</li>
+                                    <li><i class="fas fa-moon"></i> 야간 실제 항공기 정비 현장 참관</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="step2">
+                        <div class="step-card">
+                            <div class="step-header">
+                                <h3>심화 전문과정 (8주)</h3>
+                                <span class="step-duration">8 Weeks</span>
+                            </div>
+                            <div class="step-content">
+                                <ul>
+                                    <li><i class="fas fa-search"></i> 퇴역 항공기를 활용한 "고장 진단 미션" 수행</li>
+                                    <li><i class="fas fa-robot"></i> 드론 자동진단 시스템 개발 프로젝트</li>
+                                    <li><i class="fas fa-handshake"></i> 항공사 정비팀과 실제 업무 협업</li>
+                                    <li><i class="fas fa-vr-cardboard"></i> VR 활용 위험상황 대응 시뮬레이션</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="step3">
+                        <div class="step-card">
+                            <div class="step-header">
+                                <h3>창업 연계과정 (4주)</h3>
+                                <span class="step-duration">4 Weeks</span>
+                            </div>
+                            <div class="step-content">
+                                <ul>
+                                    <li><i class="fas fa-chart-line"></i> 드론 정비 사업계획서 작성 및 피칭</li>
+                                    <li><i class="fas fa-building"></i> 공항 내 창업 인큐베이터 입주 기회</li>
+                                    <li><i class="fas fa-money-bill-wave"></i> 초기 자본금 500만원 지원</li>
+                                    <li><i class="fas fa-home"></i> 사무공간 1년 무료 제공</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Program Benefits -->
+            <div class="benefits-section">
+                <h3>특별 혜택</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h4>교육비 전액 무료</h4>
+                        <p>월 50만원 장학금 지급</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-certificate"></i>
+                        <h4>자격증 비용 지원</h4>
+                        <p>항공정비사 자격증 취득 비용 전액</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-globe"></i>
+                        <h4>해외 연수 기회</h4>
+                        <p>우수 수료생 해외 명문대학 교환학생</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-briefcase"></i>
+                        <h4>취업 보장</h4>
+                        <p>수료 후 6개월 내 100% 취업</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">시설 및 활동 갤러리</h2>
+                <p class="section-subtitle">최첨단 시설과 실제 교육 현장을 확인하세요</p>
+            </div>
+
+            <div class="gallery-tabs">
+                <button class="gallery-tab-btn active" data-category="all">전체</button>
+                <button class="gallery-tab-btn" data-category="facilities">시설</button>
+                <button class="gallery-tab-btn" data-category="training">교육</button>
+                <button class="gallery-tab-btn" data-category="aircraft">항공기</button>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid">
+                <div class="gallery-item" data-category="facilities">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-building"></i>
+                        <span>김포공항 제2터미널 전용 교육관</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="aircraft">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-plane"></i>
+                        <span>퇴역 B737-200 실습 항공기</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="training">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-tools"></i>
+                        <span>실제 항공기 정비 실습</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="facilities">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-vr-cardboard"></i>
+                        <span>VR 시뮬레이션 룸</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="training">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-user-graduate"></i>
+                        <span>멘토링 세션</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="aircraft">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-helicopter"></i>
+                        <span>드론 정비 실습실</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">파트너십 & 협력기관</h2>
+                <p class="section-subtitle">산업 선두기업들과의 전략적 협력</p>
+            </div>
+
+            <div class="partners-grid">
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <i class="fas fa-plane-departure"></i>
+                    </div>
+                    <h4>대한항공</h4>
+                    <p>인턴십 및 채용 연계 MOU</p>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <i class="fas fa-plane-arrival"></i>
+                    </div>
+                    <h4>아시아나항공</h4>
+                    <p>현장실습 및 멘토링 지원</p>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h4>한국항공대학교</h4>
+                    <p>학점 인정 및 편입 특전</p>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h4>중소 드론업체</h4>
+                    <p>10개 업체 취업 보장 협약</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">자주 묻는 질문</h2>
+                <p class="section-subtitle">프로그램에 대한 궁금한 점들을 해결해드립니다</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>지원 자격은 어떻게 되나요?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>고등학교 3학년 졸업예정자 및 대학 휴학생을 대상으로 합니다. 항공기술에 대한 열정과 창의성을 중요하게 평가합니다.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>교육 기간과 일정은 어떻게 되나요?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>총 16주 과정으로, 기초 융합과정 4주, 심화 전문과정 8주, 창업 연계과정 4주로 구성됩니다. 주 5일, 일 8시간 집중 교육입니다.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>교육비와 장학금은 어떻게 되나요?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>교육비는 전액 무료이며, 월 50만원의 장학금이 지급됩니다. 또한 항공정비사 자격증 취득 비용도 전액 지원됩니다.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>졸업 후 취업은 보장되나요?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>수료 후 6개월 내 100% 취업을 보장합니다. 대한항공, 아시아나항공 등 주요 항공사와 MOU를 체결하여 취업 연계를 지원합니다.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>선발 과정은 어떻게 진행되나요?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>전국 공모를 통해 지원서를 접수하고, 창의성 면접과 손기술 테스트를 거쳐 최종 24명을 선발합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Section -->
+    <section id="apply" class="section section-primary">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">지원하기</h2>
+                <p class="section-subtitle">미래 항공산업의 주역이 되어보세요</p>
+            </div>
+
+            <div class="application-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>1단계: 온라인 지원</h4>
+                        <p>지원서 작성 및 제출</p>
+                        <span class="timeline-date">8월 1일 - 8월 31일</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>2단계: 면접 심사</h4>
+                        <p>창의성 면접 및 동기 평가</p>
+                        <span class="timeline-date">9월 5일 - 9월 10일</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>3단계: 실기 테스트</h4>
+                        <p>손기술 및 기계적 이해도 평가</p>
+                        <span class="timeline-date">9월 15일 - 9월 20일</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>4단계: 최종 합격</h4>
+                        <p>24명 최종 선발 및 교육 시작</p>
+                        <span class="timeline-date">10월 1일</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="application-cta">
+                <h3>지금 바로 지원하세요!</h3>
+                <p>차세대 항공정비 전문가로 성장할 기회를 놓치지 마세요</p>
+                <button class="btn btn-large btn-white" onclick="openApplicationModal()">
+                    <i class="fas fa-paper-plane"></i>
+                    지원서 작성하기
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Budget Section -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">사업 예산</h2>
+                <p class="section-subtitle">3년간 총 12억원의 체계적 투자 계획</p>
+            </div>
+
+            <div class="budget-overview">
+                <div class="budget-total">
+                    <h3>총 사업비</h3>
+                    <div class="budget-amount">12억원</div>
+                    <span>(3년간)</span>
+                </div>
+            </div>
+
+            <div class="budget-breakdown">
+                <div class="budget-item">
+                    <div class="budget-category">
+                        <i class="fas fa-hammer"></i>
+                        <h4>1차년도 구축비</h4>
+                    </div>
+                    <div class="budget-details">
+                        <ul>
+                            <li>퇴역 항공기 정비교육용 개조</li>
+                            <li>드론-항공기 융합 실습장비 도입</li>
+                            <li>전용 교육시설 구축 (VR룸, 강의실 등)</li>
+                            <li>교육 콘텐츠 개발 및 시스템 구축</li>
+                        </ul>
+                    </div>
+                    <div class="budget-amount-small">5억원</div>
+                </div>
+
+                <div class="budget-item">
+                    <div class="budget-category">
+                        <i class="fas fa-users"></i>
+                        <h4>연간 운영비</h4>
+                    </div>
+                    <div class="budget-details">
+                        <ul>
+                            <li>전문강사진 인건비 (현직 정비사 8명)</li>
+                            <li>교육생 장학금 (월 50만원 × 24명 × 12개월)</li>
+                            <li>실습재료비 및 유지보수</li>
+                            <li>해외연수 및 특별프로그램</li>
+                        </ul>
+                    </div>
+                    <div class="budget-amount-small">6.9억원</div>
+                </div>
+
+                <div class="budget-item">
+                    <div class="budget-category">
+                        <i class="fas fa-rocket"></i>
+                        <h4>창업지원 기금</h4>
+                    </div>
+                    <div class="budget-details">
+                        <ul>
+                            <li>우수팀 시드머니 지원</li>
+                            <li>창업 인큐베이터 운영비</li>
+                            <li>멘토링 및 컨설팅 비용</li>
+                        </ul>
+                    </div>
+                    <div class="budget-amount-small">1천만원</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sky Engineer Academy</h4>
+                    <p>차세대 항공정비 인재양성을 통한<br>혁신적 사회공헌 프로그램</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>연락처</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-user"></i> 박용환</p>
+                        <p><i class="fas fa-phone"></i> 010-7939-3123</p>
+                        <p><i class="fas fa-envelope"></i> sanoramyun8@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 경기도 용인시 수지구 성복2로 126</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>프로그램 정보</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">프로그램 소개</a></li>
+                        <li><a href="#program">커리큘럼</a></li>
+                        <li><a href="#gallery">시설 안내</a></li>
+                        <li><a href="#faq">자주 묻는 질문</a></li>
+                        <li><a href="#apply">지원하기</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sky Engineer Academy. 한국공항공사 사회공헌 아이디어 공모전 제안서</p>
+                <p>제출일: 2025년 8월 | 제안자: 박용환 (크리에이티브 넥서스)</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Application Modal -->
+    <div class="modal" id="applicationModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>지원서 작성</h3>
+                <button class="modal-close" onclick="closeApplicationModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form class="application-form">
+                    <div class="form-group">
+                        <label for="name">성명 *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">이메일 *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">연락처 *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="education">최종학력 *</label>
+                        <select id="education" name="education" required>
+                            <option value="">선택하세요</option>
+                            <option value="고등학교 졸업예정">고등학교 졸업예정</option>
+                            <option value="고등학교 졸업">고등학교 졸업</option>
+                            <option value="대학교 재학">대학교 재학</option>
+                            <option value="대학교 휴학">대학교 휴학</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="motivation">지원동기 (500자 이내) *</label>
+                        <textarea id="motivation" name="motivation" rows="5" maxlength="500" required placeholder="항공정비 분야에 관심을 갖게 된 계기와 프로그램 참여 동기를 작성해주세요."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="experience">관련 경험 및 활동</label>
+                        <textarea id="experience" name="experience" rows="3" placeholder="항공, 기계, 전자 관련 경험이나 활동이 있다면 작성해주세요."></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" onclick="closeApplicationModal()">취소</button>
+                        <button type="submit" class="btn btn-primary">제출하기</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
