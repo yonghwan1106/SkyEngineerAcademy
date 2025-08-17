@@ -66,15 +66,31 @@ body {
 .nav-logo {
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
-    font-weight: 700;
     color: #667eea;
     text-decoration: none;
 }
 
 .nav-logo i {
-    margin-right: 10px;
+    margin-right: 12px;
     font-size: 1.8rem;
+}
+
+.nav-logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.nav-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-subtitle {
+    font-size: 0.7rem;
+    font-weight: 400;
+    opacity: 0.8;
+    margin-top: -2px;
 }
 
 .nav-menu {
@@ -224,17 +240,8 @@ body {
     display: block;
     font-size: 3.5rem;
     font-weight: 900;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.title-contest {
-    display: block;
-    font-size: 0.9rem;
-    font-weight: 300;
-    opacity: 0.8;
-    margin-bottom: 15px;
-    letter-spacing: 1px;
 }
 
 .title-sub {
@@ -1370,6 +1377,10 @@ body {
         display: flex;
     }
     
+    .nav-subtitle {
+        display: none;
+    }
+    
     .nav-toggle.active span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
@@ -1384,11 +1395,6 @@ body {
     
     .title-main {
         font-size: 2.5rem;
-    }
-    
-    .title-contest {
-        font-size: 0.8rem;
-        margin-bottom: 10px;
     }
     
     .title-sub {
