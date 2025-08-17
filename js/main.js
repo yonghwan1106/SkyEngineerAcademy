@@ -170,13 +170,26 @@ function initGalleryFilter() {
             filterButtons.forEach(btn => btn.classList.remove('active'));
             button.classList.add('active');
             
-            // Filter items
-            galleryItems.forEach(item => {
+            // Filter items with animation
+            galleryItems.forEach((item, index) => {
                 if (category === 'all' || item.dataset.category === category) {
                     item.style.display = 'block';
-                    item.style.animation = 'fadeInUp 0.5s ease';
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateY(20px)';
+                    
+                    setTimeout(() => {
+                        item.style.transition = 'all 0.5s ease';
+                        item.style.opacity = '1';
+                        item.style.transform = 'translateY(0)';
+                    }, index * 100);
                 } else {
-                    item.style.display = 'none';
+                    item.style.transition = 'all 0.3s ease';
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateY(-20px)';
+                    
+                    setTimeout(() => {
+                        item.style.display = 'none';
+                    }, 300);
                 }
             });
         });
