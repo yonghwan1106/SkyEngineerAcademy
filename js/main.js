@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initFormValidation();
     initIntersectionObserver();
     initParallax();
+    initHeroSlideshow();
 });
 
 // Navigation Functionality
@@ -579,6 +580,45 @@ function initPerformanceMonitoring() {
             console.log('Page load time:', perfData.loadEventEnd - perfData.loadEventStart, 'ms');
         }, 0);
     });
+}
+
+// Hero Slideshow
+function initHeroSlideshow() {
+    const indicators = document.querySelectorAll('.indicator');
+    const slides = document.querySelectorAll('.hero-slide');
+    let currentSlide = 0;
+    
+    // Update active indicator
+    function updateIndicators() {
+        indicators.forEach((indicator, index) => {
+            indicator.classList.toggle('active', index === currentSlide);
+        });
+    }
+    
+    // Auto-advance slides
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        updateIndicators();
+    }
+    
+    // Manual slide navigation
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+            currentSlide = index;
+            updateIndicators();
+            
+            // Reset all animations
+            slides.forEach((slide, slideIndex) => {
+                slide.style.animation = 'none';
+                slide.offsetHeight; // Trigger reflow
+                slide.style.animation = `heroSlideshow 15s infinite`;
+                slide.style.animationDelay = `${(slideIndex - currentSlide + slides.length) % slides.length * 5}s`;
+            });
+        });
+    });
+    
+    // Auto-advance every 5 seconds
+    setInterval(nextSlide, 5000);
 }
 
 initPerformanceMonitoring();
