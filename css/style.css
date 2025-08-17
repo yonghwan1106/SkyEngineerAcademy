@@ -81,16 +81,25 @@ body {
     line-height: 1.2;
 }
 
-.nav-title {
+.nav-title-en {
     font-size: 1.5rem;
     font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-title-kr {
+    font-size: 0.75rem;
+    font-weight: 500;
+    opacity: 0.9;
+    margin-top: -3px;
+    margin-bottom: 2px;
 }
 
 .nav-subtitle {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     font-weight: 400;
-    opacity: 0.8;
-    margin-top: -2px;
+    opacity: 0.7;
+    margin-top: -1px;
 }
 
 .nav-menu {
@@ -1377,6 +1386,7 @@ body {
         display: flex;
     }
     
+    .nav-title-kr,
     .nav-subtitle {
         display: none;
     }
